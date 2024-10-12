@@ -41,9 +41,8 @@ jobs:
           rm -rf ${PWD}/crave.conf.sample          
         fi
       env:
-        CRAVE_USERNAME: ${{  secrets.CRAVE_USERNAME  }}
-        CRAVE_TOKEN: ${{  secrets.CRAVE_TOKEN  }}
-
+        CRAVE_USERNAME: aaamohamed499@gmail.com
+        CRAVE_TOKEN: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjY0NCwidGVhbUlkIjoxNCwiaXNBcGlLZXkiOnRydWUsImlhdCI6MTcyODUwMTcwOX0.3DdiGgOvFEgrLbXFlFZd3uhiYB3nTEZ3txqhJNhq2u0
       # Configure 'runner'
     - name: Run crave devspace
       run: |
