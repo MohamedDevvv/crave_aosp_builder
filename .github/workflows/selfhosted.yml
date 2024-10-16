@@ -12,7 +12,7 @@ on:
     inputs:
       BASE_PROJECT:
         description: 'Choose a base project:'
-        required: true
+        required: false
         default: 'LineageOS 21.0'
         type: choice
         options:
@@ -29,7 +29,7 @@ on:
           - 'AOSP'
       BUILD_DIFFERENT_ROM:
         description: "Command to initialize a different 'repo' project:"
-        required: false
+        required: true
         default: "echo 'Build Starting!'"
       REMOVALS:
         description: "Folders to be removed before syncing:"
